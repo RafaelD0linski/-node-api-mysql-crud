@@ -1,0 +1,30 @@
+-- Instação de dependencias (Abra um terminal (Ctrl + J → guia "Terminal")) 
+
+npm init -y
+npm install express mysql cors body-parser
+
+
+
+Como Funciona a Comunicação ? 
+
+O usuário acessa a página index.html, que carrega a lista de usuários chamando a API (GET /usuarios).
+
+Se ele adicionar um usuário, o JavaScript faz uma requisição POST /usuarios enviando os dados.
+
+A API recebe a requisição, salva os dados no MySQL e responde com um status de sucesso.
+
+O front-end recarrega a lista de usuários automaticamente.
+
+
+
+---Código do mysql
+
+
+CREATE DATABASE meu_banco;
+USE meu_banco;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100)
+);
