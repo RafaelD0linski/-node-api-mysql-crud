@@ -1,4 +1,4 @@
-O objetivo desse porje é entender melhor como funciona a comunicação entre:
+O objetivo desse projeto é entender melhor como funciona a comunicação entre:
 -Api
 -DB
 -Html 
